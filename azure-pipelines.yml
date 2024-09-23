@@ -24,3 +24,10 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'uamangedidentity'
+    subscriptionId: '72d61747-b97c-4857-9cc7-04bf2cdd552f'
+    action: 'DeleteRG'
+    resourceGroupName: 'rg-order-dev-neurope-001'
