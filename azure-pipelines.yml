@@ -31,4 +31,4 @@ steps:
     scriptLocation: 'inlineScript'
     scriptType: pscore
     inlineScript: |
-      az role assignment create --assignee "dta-ndev-eun-mi-02" --role "User Access Administrator" --scope "/subscriptions/72d61747-b97c-4857-9cc7-04bf2cdd552f"
+      az role assignment create --assignee "14443cd6-cd40-4f6e-97e5-c25d071c2029" --role "User Access Administrator" --scope "/subscriptions/72d61747-b97c-4857-9cc7-04bf2cdd552f"
