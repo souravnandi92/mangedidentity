@@ -28,8 +28,8 @@ steps:
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'uamangedidentity'
-    scriptType: 'ps'
     scriptLocation: 'inlineScript'
+    scriptType: pscore
     inlineScript: |
       az role assignment create --assignee "dta-ndev-eun-mi-02" \
       --role "User Access Administrator" \
